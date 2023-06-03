@@ -4,7 +4,8 @@ const { StatusCodes} = require('http-status-codes');
 const CustomError = require('../errors');
 const { checkPermissions } = require('../utils');
 
-/* This code is a mock Stripe API that returns a client secret and an amount.
+/* 
+   This code is a mock Stripe API that returns a client secret and an amount.
    It takes in two parameters, amount and currency,
    and returns an object containing the client secret and the amount.
 */ 
