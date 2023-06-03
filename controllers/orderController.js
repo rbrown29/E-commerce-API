@@ -4,6 +4,10 @@ const { StatusCodes} = require('http-status-codes');
 const CustomError = require('../errors');
 const { checkPermissions } = require('../utils');
 
+/* This code is a mock Stripe API that returns a client secret and an amount.
+   It takes in two parameters, amount and currency,
+   and returns an object containing the client secret and the amount.
+*/ 
 const fakeStripeAPI = async ({ amount, currency }) => {
     const clientSecret = 'fake-client-secret';
     return {
@@ -11,7 +15,15 @@ const fakeStripeAPI = async ({ amount, currency }) => {
         amount,
     };
 }
-
+/*
+    This code is a function that creates an order.
+    It takes in the request body, which contains the items, tax, and shipping fee.
+    It then checks if there are any items in the cart and if there is a tax and shipping fee provided.
+    It then loops through the items in the cart to get their name, price, image, and product id.
+    It then calculates the subtotal of all the items in the cart.
+    After that it calculates the total by adding the subtotal, tax, and shipping fee. 
+    It creates an order with all of this information and returns it with a client secret for payment processing.
+*/
 const createOrder = async (req, res) => {
     const { items: cartItems, tax, shippingFee } = req.body;
 
