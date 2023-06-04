@@ -5,6 +5,11 @@ const app = express();
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const fileUpload = require('express-fileupload');
+const rateLimiter = require('express-rate-limit');
+const helmet = require('helmet');
+const xss = require('xss-clean');
+const cors = require('cors');
+const mongoSanitize = require('express-mongo-sanitize');
 const connectDB = require('./db/connect');
 
 
@@ -18,6 +23,21 @@ const orderRouter = require('./routes/orderRoutes');
 // middleware
 const notFoundMiddleware = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
+
+// security
+app.set('trust proxy', 1);
+app.use(
+    rateLimiter({
+        windowMs: 15 * 60 * 1000, // 15 minutes
+        max: 60, // limit each IP to 60 requests per windowMs
+    })
+);
+app.use(helmet());
+app.use(xss());
+app.use(cors());
+app.use(mongoSanitize());
+
+app.options('*', cors());
 
 app.use(morgan('tiny'));
 
