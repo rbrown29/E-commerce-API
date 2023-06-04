@@ -47,15 +47,6 @@ app.use(express.static('./public'));
 
 app.use(fileUpload({}));
 
-// routes
-app.get('/', (req, res) => {
-    res.send('<h1>Store API</h1>');
-});
-
-app.get('/api/v1/', (req, res) => {
-    console.log(req.signedCookies);
-    res.send('<h1>Products Route</h1>');
-});
 
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
