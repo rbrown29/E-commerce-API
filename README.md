@@ -37,6 +37,7 @@ npm install
 node app.js
 ```
 4. Open the application on your browser at http://localhost:5000
+```
 
 
 
