@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const mockData = require('./mock-data/orders.json');
+const mockData = require('./mockdata/orders.json');
 
 const Order = require('./models/order');
 
