@@ -1,5 +1,13 @@
 const mongoose = require('mongoose');
 
+/*
+    This code is defining a Mongoose schema for an order. 
+    The SingleOrderItemsSchema defines the fields of an individual item in the order, 
+    such as name, image, price, amount and product. 
+    The OrderSchema defines the fields of the order itself, such as tax, shipping fee, sub total and total. 
+    It also includes an array of SingleOrderItemsSchema objects and fields for user and payment intent ID.
+*/
+
 const SingleOrderItemsSchema = new mongoose.Schema({
     name: {
         type: String,
