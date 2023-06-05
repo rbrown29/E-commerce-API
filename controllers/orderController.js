@@ -76,11 +76,23 @@ const createOrder = async (req, res) => {
     res.status(StatusCodes.CREATED).json({ order, clientSecret: order.clientSecret });
 }
 
+/*
+    This code is an asynchronous function that retrieves all orders from a database
+    and sends them back in the response with a status code of OK.
+    The response also includes the count of orders retrieved.
+*/
 const getAllOrders = async (req, res) => {
     const orders = await Order.find({});
     res.status(StatusCodes.OK).json({ orders, count: orders.length });
 }
 
+/*
+    This code is an asynchronous function that is used to retrieve an order from a database.
+    It takes in two parameters, req and res, which are used to access the request and response objects.
+    It then uses the orderId from the request parameters to search for the order in the database. 
+    If it finds an order with that id, it checks if the user has permission to access it.
+    Finally, it sends a response with the order data in JSON format.
+*/
 const getOrder = async (req, res) => {
     const { id: orderId } = req.params;
     const order = await Order.findOne({ _id: orderId });
@@ -91,11 +103,24 @@ const getOrder = async (req, res) => {
     res.status(StatusCodes.OK).json({ order });
 }
 
+/*
+    This code is used to retrieve the orders of a specific user. 
+    It uses the request object (req) to get the user's ID, 
+    then it queries the Order database with that ID and 
+    returns the orders in a JSON format with a count of how many orders were found.
+*/
 const getCurrentUserOrders = async (req, res) => {
     const orders = await Order.find({ user: req.user.userId });
     res.status(StatusCodes.OK).json({ orders, count: orders.length });
 }
 
+/*
+    This code is an asynchronous function that updates an order in a database. 
+    It takes two parameters, req and res, and uses them to find the order with the given ID. 
+    It then checks the permissions of the user making the request and 
+    sets the status of the order to 'paid' and assigns it a payment intent ID. 
+    It saves the order and sends a response with an OK status code and a JSON object containing the updated order.
+*/
 const updateOrder = async (req, res) => {
     const { id: orderId } = req.params;
     const { paymentIntentId } = req.body;
