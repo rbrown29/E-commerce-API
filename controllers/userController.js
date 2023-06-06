@@ -3,12 +3,23 @@ const { StatusCodes } = require('http-status-codes');
 const CustomError = require('../errors');
 const { createTokenUser, attachCookiesToResponse, checkPermissions } = require('../utils');
 
+/*
+    This code is an asynchronous function that is used to get all users with the role of 'user' from a database. 
+    It logs the request user, finds all users with the specified role, 
+    and then returns a response with the found users and their count.
+*/
 const getAllUsers = async (req, res) => {
     console.log(req.user);
     const users = await User.find({role: 'user'}).select('-password');
     res.status(StatusCodes.OK).json({ users, count: users.length });
 }
 
+/*
+    This code is used to retrieve a user from the database. 
+    It first checks if the user exists, 
+    then checks the permissions of the user, 
+    and finally returns the user's data in a JSON format.
+*/
 const getUser = async (req, res) => {
    const user = await User.findOne({_id: req.params.id}).select('-password');
     if (!user) {
