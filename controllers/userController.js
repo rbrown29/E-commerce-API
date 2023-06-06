@@ -29,6 +29,10 @@ const getUser = async (req, res) => {
     res.status(StatusCodes.OK).json({ user });
 }
 
+/*
+    This code is an asynchronous function that takes in two parameters, req and res. 
+    It sets the status code to OK and sends a response in JSON format containing the user data from the request object.
+*/
 const showCurrentUser = async (req, res) => {
     res.status(StatusCodes.OK).json({ user: req.user });
 }
