@@ -2,6 +2,14 @@ const express = require('express');
 const router = express.Router();
 const { authenticateUser, authorizePermissions } = require('../middleware/authentication');
 
+/*
+    This code is a set of routes for the user controller. 
+    The first route allows an admin to get all users, 
+    the second route allows a user to show themselves, 
+    the third route allows a user to update their profile, 
+    the fourth route allows a user to update their password, 
+    and the fifth route allows any authenticated user to get a specific user.
+*/
 const { 
     getAllUsers,
     getUser,
