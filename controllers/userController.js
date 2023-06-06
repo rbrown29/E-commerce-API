@@ -37,6 +37,12 @@ const showCurrentUser = async (req, res) => {
     res.status(StatusCodes.OK).json({ user: req.user });
 }
 
+/*
+    This code is an asynchronous function that updates a user's name and email in a database. 
+    It first checks if the name and email are provided, and if not, throws an error. 
+    Then it finds the user with the given ID and updates their name and email. 
+    Finally, it creates a token for the user and attaches it to the response before sending back a status code of OK with the updated user information.
+*/
 const updateUser = async (req, res) => {
     const { name, email } = req.body;
     if (!name || !email) {
@@ -54,6 +60,12 @@ const updateUser = async (req, res) => {
     res.status(StatusCodes.OK).json({ user: tokenUser });
 }
 
+/*
+    This code is an asynchronous function that updates a user's password. 
+    It first checks if both the old and new passwords are provided, 
+    then finds the user in the database and compares the old password to make sure it is correct. 
+    If the old password is correct, it updates the user's password with the new one and sends a success message.
+*/
 const updateUserPassword = async (req, res) => {
    const { oldPassword, newPassword } = req.body;
     if (!oldPassword || !newPassword) {
