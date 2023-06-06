@@ -2,6 +2,12 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 const bcrypt = require('bcryptjs');
 
+/*
+    This code is creating a Mongoose schema for a user model. 
+    It defines the fields that will be stored in the database for each user, such as name, email, password, and role. 
+    It also includes methods for hashing passwords and comparing passwords with Bcrypt and genSalt. 
+    It also exports the model so that it can be used in other parts of the application.
+*/
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
