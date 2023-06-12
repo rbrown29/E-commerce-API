@@ -9,7 +9,7 @@ This is a e-commerce API that allows users to create, read, update, review and d
 
 [e-commerce](https://e-commerce-api-24p3.onrender.com/)
 
-<p>Admin Register and Sign-in Interface to add products</p>
+<p>Admin Register and Sign-in Interface at the below link</p>
 
 [AuthE-Commerce](https://ubiquitous-kheer-a5cf35.netlify.app/)
 &nbsp;
