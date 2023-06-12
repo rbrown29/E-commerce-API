@@ -10,8 +10,10 @@ This is a e-commerce API that allows users to create, read, update, review and d
 [e-commerce](https://e-commerce-api-24p3.onrender.com/)
 
 <p>Admin Register and Sign-in Interface to add products</p>
-[AuthE-Commerce](https://ubiquitous-kheer-a5cf35.netlify.app/)
 
+[AuthE-Commerce](https://ubiquitous-kheer-a5cf35.netlify.app/)
+&nbsp;
+&nbsp;
 <p>This is a free deployment on render.com and it is not a production deployment. It is just for testing purposes. The database is hosted on MongoDB Atlas. The server is automatically spun down after 15 minutes of inactivity. So, it may take a few seconds to spin up the server when you make a request. You may have to refresh the page a couple of times to get a response. </p>
 
 <div>
