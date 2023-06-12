@@ -12,7 +12,7 @@ This is a e-commerce API that allows users to create, read, update, review and d
 <p>
    Admin Register and Sign-in Interface at the below link.
    Register as admin and then sign-in to access the admin dashboard.
-   Regigster and Password Reset interfaces are also available, for now request links are sent to etheral. if you send a request, I will autherize it.
+   Register and Password Reset interfaces are also available, for now request links are sent to etheral. if you send a request, I will autherize it.
 </p>
 
 [AuthE-Commerce](https://ubiquitous-kheer-a5cf35.netlify.app/)
