@@ -29,9 +29,11 @@ const ProductSchema = new mongoose.Schema({
         required: [true, 'Please provide product catagory'],
         enum: {
             values: [
-                'office',
-                'kitchen',
-                'bedroom',
+                'phone',
+                'laptop',
+                'computer',
+                'game console',
+                'headphones'
             ],
         },
     },
@@ -40,9 +42,10 @@ const ProductSchema = new mongoose.Schema({
         required: [true, 'Please provide product company'],
         enum: {
             values: [
-                'ikea',
-                'liddy',
-                'caressa',
+                'apple',
+                'dell',
+                'hp',
+                'microsoft',
             ],
             message: '{VALUE}' + 'is not supported',
         },
