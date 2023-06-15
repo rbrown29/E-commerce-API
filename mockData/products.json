@@ -3,7 +3,7 @@
     "name": "iphone X",
     "price": 25999,
     "featured": "true",
-    "images": "product-1.jpg (https://v5.airtableusercontent.com/v1/18/18/1686780000000/3t-xVFHvNRBdYZZZhwsrlQ/k_wxhaFTTEwJSnW9H_5l_S4OpugqbUPQDzXCAWpy0CL9vcpgmNZzaw09BqpsmnLoz71bqbpfTW7ypcn5aQok3-2C5FEdHmYC3747QTS4qJk/7BIR7W6bOqNJpN2J76khob3qBJUlNI_sJoD0Mh0PScU),z-additional-1.jpg (https://v5.airtableusercontent.com/v1/18/18/1686780000000/rlmiTI_U1gWsbj8rykE3tQ/EV9-mTlxa69BZq3M4SCERRlqd2NrernnryrU4GqIhA7jVsGO94LtvUNIYGCFZtECVoKnVvQyb5hxnctlMY-xnw2fPQYdE3ZPXPN50YFTJ4k/sUSS74V4KCVhNhO7lPit44dnWkeO_GaPP4OnxYP3pJc),z-additional-2.jpg (https://v5.airtableusercontent.com/v1/18/18/1686780000000/1wYrPTsvqa4OB7OuLZ8YYw/y8bvFRCvthoCJEM6zinmybM-uPpmXH-3WQDQi9cJ93q2_6YlfZ8vJWOElUEKEd9Gc6IVCzrW8BIOCr1E9LmShV1uKbw7GDffVfe3rJmNng0/MQJESLnEucW8d7Ke9QMSk9NJmeDZ3kCvyeHblFoQpJ0),z-additional-3.jpg (https://v5.airtableusercontent.com/v1/18/18/1686780000000/ul1mJl30cHGn2kMKHo8n4g/qxU4E_stZRUgvlDWFY7YEzqRbtWUYTEoJwVCOmDptSKCIUs0RLijKyWFR2m758WFEcPWxPdaNTzD92ymGHACr4_cBc3JA6szFWdtHEuEdlo/wI3yIjVRR5cfhjJpCcwIdZIo8k1BLw-KblcVceQZy40),z-additional-4.jpg (https://v5.airtableusercontent.com/v1/18/18/1686780000000/lNbJQMPfsH813v_lSCedZw/pRbrEjw90Iu2IoDHezmwFXBRfg9LodPPi0ZDyUM2fSjUB544StlHNm1TQAuvhWod7QJI4z5ek7hwltc3sA6e0SIGsGXfyd6M1OljBpwZMy8/_35nMzLKvBm7fFABZYsKgYlDnmlF5aMqqdonFUGP2BM)",
+    "images": "../public/product-1.jpg",
     "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     "colors": "#000,#ff0000",
     "company": "apple",
@@ -11,7 +11,8 @@
     "stars": 4.2,
     "reviews": 30,
     "category": "phone",
-    "shipping": "checked"
+    "shipping": "checked",
+    "user": "64866961acfb2caf3a12080e"
   },
   {
     "name": "imac",
@@ -25,7 +26,8 @@
     "stars": 3.5,
     "reviews": 20,
     "category": "computer",
-    "shipping": ""
+    "shipping": "",
+    "user": "64866961acfb2caf3a12080e"
   },
   {
     "name": "dell laptop",
@@ -39,7 +41,8 @@
     "stars": 4.5,
     "reviews": 10,
     "category": "laptop",
-    "shipping": "checked"
+    "shipping": "checked",
+    "user": "64866961acfb2caf3a12080e"
   },
   {
     "name": "hp laptop",
@@ -53,7 +56,8 @@
     "stars": 3.7,
     "reviews": 40,
     "category": "laptop",
-    "shipping": ""
+    "shipping": "",
+    "user": "64866961acfb2caf3a12080e"
   },
   {
     "name": "microsoft xbox",
@@ -67,7 +71,8 @@
     "stars": 4.9,
     "reviews": 60,
     "category": "game console",
-    "shipping": "checked"
+    "shipping": "checked",
+    "user": "64866961acfb2caf3a12080e"
   },
   {
     "name": "awesome headphones",
@@ -81,6 +86,7 @@
     "stars": 2.7,
     "reviews": 106,
     "category": "headphones",
-    "shipping": ""
+    "shipping": "",
+    "user": "64866961acfb2caf3a12080e"
   }
 ]

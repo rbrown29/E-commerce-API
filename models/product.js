@@ -22,7 +22,8 @@ const ProductSchema = new mongoose.Schema({
     image: {
         type: String,
         required: [true, 'Please provide product image'],
-        default: '/uploads/example.jpg',
+        default: './uploads/product-1.png',
+        
     },
     category: {
         type: String,
@@ -70,11 +71,12 @@ const ProductSchema = new mongoose.Schema({
     },
     averageRating: {
         type: Number,
-        default: 0,
+        default: 4.5,
     },
     numOfReviews: {
         type: Number,
-        default: 0,
+        required: true,
+        default: 20,
     },
     user: {
         type: mongoose.Types.ObjectId,
